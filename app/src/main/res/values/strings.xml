@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WorkManager Test</string>
+    <string name="add_request">Add Request</string>
+</resources>
