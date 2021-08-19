@@ -2,7 +2,6 @@ package com.hp.workmanagertest
 
 import android.os.Bundle
 import android.widget.Button
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
@@ -35,8 +34,5 @@ class MainActivity : AppCompatActivity() {
             WorkManager.getInstance(this).enqueue(retrofitRequest)
 
         }
-
-        WorkManager.getInstance(this).getWorkInfosByTag("similar_job_tag")
-            .addListener(() { Toast.makeText(this, "", Toast.LENGTH_LONG).show() })
     }
 }
