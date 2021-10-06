@@ -1,4 +1,4 @@
-package com.hp.workmanagertest
+package br.com.lno.workmanagertest
 
 import org.junit.Test
 

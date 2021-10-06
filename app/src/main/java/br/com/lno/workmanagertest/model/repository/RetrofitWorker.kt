@@ -1,4 +1,4 @@
-package com.hp.workmanagertest
+package br.com.lno.workmanagertest.model.repository
 
 import android.content.Context
 import androidx.work.CoroutineWorker

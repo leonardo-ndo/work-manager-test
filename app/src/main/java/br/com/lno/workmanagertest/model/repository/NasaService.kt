@@ -1,4 +1,4 @@
-package com.hp.workmanagertest
+package br.com.lno.workmanagertest.model.repository
 
 import retrofit2.Response
 import retrofit2.http.GET

@@ -1,10 +1,11 @@
-package com.hp.workmanagertest
+package br.com.lno.workmanagertest.view
 
 import android.os.Bundle
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
+import br.com.lno.workmanagertest.databinding.ActivityMainBinding
+import br.com.lno.workmanagertest.model.repository.RetrofitWorker
 import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
@@ -12,9 +13,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        val binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        findViewById<Button>(R.id.bt_create_request).setOnClickListener {
+        binding.btCreateRequest.setOnClickListener {
 
             val retrofitRequest = OneTimeWorkRequestBuilder<RetrofitWorker>()
 //                .setConstraints(
