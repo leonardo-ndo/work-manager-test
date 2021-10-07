@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">WorkManager Test</string>
+
     <string name="add_request">Add Request</string>
+    <string name="attempt_count">Attempt Count: %1$d</string>
+    <string name="cancel_all">Cancel All</string>
+    <string name="footer_msg">Long click on item to cancel it</string>
+    <string name="prune_work">Prune Work</string>
 </resources>
