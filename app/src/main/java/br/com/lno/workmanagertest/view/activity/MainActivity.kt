@@ -43,9 +43,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 .addTags(listOf("similar_job_tag")).build()
 
         // Observe all items that have not yet succeeded
-        WorkManager.getInstance(this).getWorkInfosLiveData(workQuery).observe(this, {
+        WorkManager.getInstance(this).getWorkInfosLiveData(workQuery).observe(this) {
             queueAdapter.submitList(it)
-        })
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
